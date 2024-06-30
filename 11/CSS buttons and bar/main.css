@@ -1,0 +1,13 @@
+p{
+    font-family: arial;
+}
+.amount{
+    font-size: 50px;
+    font-style: bold;
+    margin-bottom: 0;
+}
+.dollar{
+    color: gray;
+    font-size: 25px;
+    margin-left: 10px;
+}
