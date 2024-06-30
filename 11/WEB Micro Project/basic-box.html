@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        p {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .product-holder {
+            display: grid;
+            grid-template-columns: 220px;
+            width: 220px;
+            row-gap: 10px;
+            border: 2px solid #ddd;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: beige;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .product-holder:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-1 {
+            display: block;
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-image {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-price {
+            height: 30px;
+            text-align: start;
+        }
+
+        .product-price-text {
+            font-family: 'Roboto', sans-serif;
+            color: rgb(230, 77, 77);
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .product-name {
+            text-align: start;
+            height: 25px;
+        }
+
+        .product-name-text {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .seller {
+            margin-top: 10px;
+        }
+
+        .seller-name-text {
+            color: #555;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-holder">
+        <div class="product-image">
+            <img src="clothes/jacket.webp" class="product-1">
+        </div>
+
+        <div class="product-name">
+            <p class="product-name-text">Stylish Men's Jacket</p>
+        </div>
+
+        <div class="product-price">
+            <p class="product-price-text">Rent for only $20/week</p>
+        </div>
+
+        <div class="seller">
+            <p class="seller-name-text">FashionHub</p>
+        </div>
+    </div>
+</body>
+</html>
