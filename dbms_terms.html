@@ -1,59 +1,81 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <title>Terminologies of DBMS</title>
     <style>
-      body {
-        padding-left: 30px;
-        align-items: center;
-      }
-      .list {
-        background-color: blanchedalmond;
-        display: inline-block;
-        padding-right: 20px;
-        border-radius: 10%;
-      }
-      .list-container {
-        display: block;
-        padding-left: 2px;
-      }
-      .description {
-        margin-top: 20px;
-        padding-left: 10px;
-      }
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .list {
+            background-color: #ffebcd; /* blanched almond */
+            display: inline-block;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .list-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .list-item {
+            margin: 10px 0;
+            color: #4CAF50; 
+            font-weight: bold;
+        }
+        .description {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+        .details {
+            margin-bottom: 15px;
+        }
+        .description strong {
+            color: #4CAF50; 
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <h1>DBMS Terminologies</h1>
     <div class="list-container">
-      <div class="list">
-        <ul type="square">
-          <li>Data</li>
-          <li>Information</li>
-          <li>Metadata</li>
-          <li>Data Directory</li>
-          <li>Database</li>
-          <li>Table</li>
-          <li>Tuple(s)</li>
-          <li>Field(s)</li>
-          <li>Domain(s)</li>
-          <li>Constraint(s)</li>
-          <li>Key(s)</li>
-        </ul>
-      </div>
+        <div class="list">
+            <div class="list-item">Data</div>
+            <div class="list-item">Information</div>
+            <div class="list-item">Metadata</div>
+            <div class="list-item">Data Directory</div>
+            <div class="list-item">Database</div>
+            <div class="list-item">Table</div>
+            <div class="list-item">Tuple(s)</div>
+            <div class="list-item">Field(s)</div>
+            <div class="list-item">Domain(s)</div>
+            <div class="list-item">Constraint(s)</div>
+            <div class="list-item">Key(s)</div>
+        </div>
     </div>
 
     <div class="description">
-      <div style="margin-top: 10px;"><strong>Data:</strong> Raw facts and figures.</div>
-      <div style="margin-top: 10px;"><strong>Information:</strong> Processed data that has meaning.</div>
-      <div style="margin-top: 10px;"><strong>Metadata:</strong> Data about data, providing information about other data.</div>
-      <div style="margin-top: 10px;"><strong>Data Directory:</strong> A directory that stores metadata and information about the structure of databases.</div>
-      <div style="margin-top: 10px;"><strong>Database:</strong> A structured collection of data.</div>
-      <div style="margin-top: 10px;"><strong>Table:</strong> A structured representation of data in rows and columns.</div>
-      <div style="margin-top: 10px;"><strong>Tuple(s):</strong> A row in a table that contains a set of related data.</div>
-      <div style="margin-top: 10px;"><strong>Field(s):</strong> A column in a table that represents a particular attribute or property.</div>
-      <div style="margin-top: 10px;"><strong>Domain(s):</strong> The set of possible values for a given attribute.</div>
-      <div style="margin-top: 10px;"><strong>Constraint(s):</strong> Rules or conditions applied to data to enforce integrity.</div>
-      <div style="margin-top: 10px;"><strong>Key(s):</strong> A field or combination of fields that uniquely identify a record in a table.</div>
+        <div class="details"><strong>Data:</strong> Raw facts and figures without context. Examples include numbers, dates, and strings.</div>
+        <div class="details"><strong>Information:</strong> Processed data that is meaningful and useful. It often comes in the form of reports or summaries.</div>
+        <div class="details"><strong>Metadata:</strong> Data about data, providing details such as data type, source, and structure. It helps in understanding and managing data.</div>
+        <div class="details"><strong>Data Directory:</strong> A directory that stores metadata and information about the structure of databases. It acts as a catalog for users and applications.</div>
+        <div class="details"><strong>Database:</strong> A structured collection of related data stored electronically. Databases facilitate data management and retrieval.</div>
+        <div class="details"><strong>Table:</strong> An organized collection of data in rows and columns within a database. Each table holds data about a specific type of entity.</div>
+        <div class="details"><strong>Tuple(s):</strong> A single row in a table, representing a single record. Each tuple contains related data about an entity.</div>
+        <div class="details"><strong>Field(s):</strong> A column in a table representing a specific attribute. Fields hold data values of a particular type, such as text or numbers.</div>
+        <div class="details"><strong>Domain(s):</strong> The set of possible values for a given attribute or field. Domains ensure data integrity by restricting values to a predefined set.</div>
+        <div class="details"><strong>Constraint(s):</strong> Rules applied to data to enforce integrity and accuracy. Constraints include primary keys, foreign keys, and unique constraints.</div>
+        <div class="details"><strong>Key(s):</strong> Unique identifiers for records in a table. Primary keys uniquely identify each record, while foreign keys link related tables.</div>
     </div>
-  </body>
+</body>
 </html>
