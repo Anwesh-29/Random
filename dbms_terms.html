@@ -1,81 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Terminologies of DBMS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Terminologies</title>
     <style>
         body {
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: rgba(240, 240, 240, 1);
+            line-height: 1.6;
         }
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-        }
-        .list {
-            background-color: #ffebcd; /* blanched almond */
-            display: inline-block;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .list-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .list-item {
-            margin: 10px 0;
-            color: #4CAF50; 
-            font-weight: bold;
-        }
-        .description {
-            margin-top: 20px;
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(76, 175, 80, 1);
+            color: #fff;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .terminology-list {
+            list-style: none;   
+            padding: 0px;
+        }
+
+        .terminology-item {
+            background-color: rgba(248, 246, 247, 1);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .terminology-item:hover {
+            background-color: rgba(224, 224, 224, 1);
+            transform: translateY(-3px);
+        }
+
+        .conc {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-left: 75px;
-            margin-right: 75px;
+            padding: 20px;
         }
-        .details {
-            margin-bottom: 15px;
+
+        .term-heading {
+            font-size: 20px;
+            color: rgba(76, 175, 80, 1);
+            margin-bottom: 10px;
         }
-        .description strong {
-            color: #4CAF50; 
+
+        .term-definition {
+            margin-bottom: 15px; 
         }
+
+        
     </style>
 </head>
 <body>
-    <h1>DBMS Terminologies</h1>
-    <div class="list-container">
-        <div class="list">
-            <div class="list-item">Data</div>
-            <div class="list-item">Information</div>
-            <div class="list-item">Metadata</div>
-            <div class="list-item">Data Directory</div>
-            <div class="list-item">Database</div>
-            <div class="list-item">Table</div>
-            <div class="list-item">Tuple(s)</div>
-            <div class="list-item">Field(s)</div>
-            <div class="list-item">Domain(s)</div>
-            <div class="list-item">Constraint(s)</div>
-            <div class="list-item">Key(s)</div>
+    <div class="container">
+        <div class="header">
+            <h1>DBMS Terminologies</h1>
         </div>
-    </div>
 
-    <div class="description">
-        <div class="details"><strong>Data:</strong> Raw facts and figures without context. Examples include numbers, dates, and strings.</div>
-        <div class="details"><strong>Information:</strong> Processed data that is meaningful and useful. It often comes in the form of reports or summaries.</div>
-        <div class="details"><strong>Metadata:</strong> Data about data, providing details such as data type, source, and structure. It helps in understanding and managing data.</div>
-        <div class="details"><strong>Data Directory:</strong> A directory that stores metadata and information about the structure of databases. It acts as a catalog for users and applications.</div>
-        <div class="details"><strong>Database:</strong> A structured collection of related data stored electronically. Databases facilitate data management and retrieval.</div>
-        <div class="details"><strong>Table:</strong> An organized collection of data in rows and columns within a database. Each table holds data about a specific type of entity.</div>
-        <div class="details"><strong>Tuple(s):</strong> A single row in a table, representing a single record. Each tuple contains related data about an entity.</div>
-        <div class="details"><strong>Field(s):</strong> A column in a table representing a specific attribute. Fields hold data values of a particular type, such as text or numbers.</div>
-        <div class="details"><strong>Domain(s):</strong> The set of possible values for a given attribute or field. Domains ensure data integrity by restricting values to a predefined set.</div>
-        <div class="details"><strong>Constraint(s):</strong> Rules applied to data to enforce integrity and accuracy. Constraints include primary keys, foreign keys, and unique constraints.</div>
-        <div class="details"><strong>Key(s):</strong> Unique identifiers for records in a table. Primary keys uniquely identify each record, while foreign keys link related tables.</div>
+        <ul class="terminology-list">
+            <li class="terminology-item">
+                <div class="term-heading">Data</div>
+                <div class="term-definition">Raw facts and figures without context. Examples include numbers, dates, and strings.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Information</div>
+                <div class="term-definition">Processed data that is meaningful and useful. It often comes in the form of reports or summaries.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Metadata</div>
+                <div class="term-definition">Data about data, providing details such as data type, source, and structure. It helps in understanding and managing data.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Data Directory</div>
+                <div class="term-definition">A directory that stores metadata and information about the structure of databases. It acts as a catalog for users and applications.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Database</div>
+                <div class="term-definition">A structured collection of related data stored electronically. Databases facilitate data management and retrieval.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Table</div>
+                <div class="term-definition">An organized collection of data in rows and columns within a database. Each table holds data about a specific type of entity.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Tuple(s)</div>
+                <div class="term-definition">A single row in a table, representing a single record. Each tuple contains related data about an entity.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Field(s)</div>
+                <div class="term-definition">A column in a table representing a specific attribute. Fields hold data values of a particular type, such as text or numbers.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Domain(s)</div>
+                <div class="term-definition">The set of possible values for a given attribute or field. Domains ensure data integrity by restricting values to a predefined set.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Constraint(s)</div>
+                <div class="term-definition">Rules applied to data to enforce integrity and accuracy. Constraints include primary keys, foreign keys, and unique constraints.</div>
+            </li>
+            <li class="terminology-item">
+                <div class="term-heading">Key(s)</div>
+                <div class="term-definition">Unique identifiers for records in a table. Primary keys uniquely identify each record, while foreign keys link related tables.</div>
+            </li>
+        </ul>
+
+        <div class="conc">
+            <div class="term-heading">Additional Information</div>
+            <div class="term-definition">This section provides detailed explanations of various terms used in Database Management Systems (DBMS) to help understand their roles and significance in data organization and management.</div>
+        </div>
     </div>
 </body>
 </html>
