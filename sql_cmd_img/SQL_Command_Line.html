@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Command Line</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Montserrat Alternates', sans-serif;
+      margin: 20px;
+      padding: 20px;
+    }
+    .header_text {
+      font-family: 'Major Mono Display', monospace;
+      font-weight: 400;
+      border-right: 2px solid rgba(51, 51, 51, 1)
+      ;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(36, end), cursor .75s step-end infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes cursor {
+      50% { border-color: transparent; }
+    }
+    .list {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .list-item {
+      list-style-type: none;
+      margin-bottom: 4px;
+    }
+    .commands {
+      margin-top: 20px;
+    }
+    .commands_headers {
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    .text {
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+    .example {
+      margin-left: 20px;
+      font-style: italic;
+      color: green;
+      font-size: 15px;
+    }
+    .list-item {
+      margin: 15px;
+    }
+    .img {
+      display: flex;
+      margin-left: 250px;
+      transition: 0.5s;
+    }
+    .table_img {
+      border-radius: 10%;
+      box-shadow: 1px 1px 10px green;
+      display: block;
+      filter: brightness(85%);
+      transition: 0.5s;
+    }
+    .img:hover{
+      scale: 103%;
+      filter: brightness(100%);
+    }
+    .table_img:hover{
+      box-shadow: 1px 1px 10px white;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header_typewriter">
+    <h1 class="header_text">Command Line Implementation in MySQL</h1>
+  </div>
+  <div class="list">
+    <p class="title">Common MySQL Commands</p>
+    <ul>
+      <li class="list-item"><strong>Create:</strong> Used to create a new database or table.</li>
+      <li class="list-item"><strong>Drop:</strong> Used to delete an existing database or table.</li>
+      <li class="list-item"><strong>Alter:</strong> Used to modify an existing database or table structure.</li>
+      <li class="list-item"><strong>Add:</strong> Used to add a new column to an existing table.</li>
+      <li class="list-item"><strong>Update:</strong> Used to modify the data in an existing table.</li>
+      <li class="list-item"><strong>Set:</strong> Used to change the value of a MySQL system variable.</li>
+      <li class="list-item"><strong>Insert:</strong> Used to add new rows of data to an existing table.</li>
+      <li class="list-item"><strong>Select:</strong> Used to query and retrieve data from a database.</li>
+    </ul>
+  </div>
+
+  <div class="commands">
+    <h3 class="commands_headers"><strong>CREATE</strong></h3>
+    <p class="text">CREATE DATABASE TRIAL;</p>
+    <p class="text">CREATE TABLE LIST (
+       ID INT(4) PRIMARY KEY,
+       NAME VARCHAR(255),
+       ADDRESS VARCHAR(255),
+       TELEFON BIGINT(10),
+       GESCHELET BOOLEAN
+      );</p>
+    <p class="example">Example:</p>
+    <pre class="example">
+      CREATE DATABASE mydatabase;
+      CREATE TABLE customers (
+        ID INT AUTO_INCREMENT PRIMARY KEY,
+        NAME VARCHAR(255) NOT NULL,
+        EMAIL VARCHAR(255) UNIQUE,
+        CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    </pre>
+
+    <h3 class="commands_headers"><strong>ALTER</strong></h3>
+    <p class="text">ALTER TABLE list ADD COLUMN ALIVE VARCHAR(10);</p>
+    <p class="example">Example:</p>
+    <pre class="example">
+      ALTER TABLE customers
+      ADD COLUMN phone VARCHAR(20);
+    </pre>
+
+    <h3 class="commands_headers"><strong>DROP</strong></h3>
+    <p class="text">ALTER TABLE list DROP COLUMN ALIVE;</p>
+    <p class="example">Example:</p>
+    <pre class="example">
+      ALTER TABLE customers
+      DROP COLUMN phone;
+    </pre>
+  </div>
+  <div class="img">
+    <img src="table.png" class="table_img">
+  </div>
+</body>
+</html>
