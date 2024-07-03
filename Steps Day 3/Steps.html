@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Terminologies</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: rgba(240, 240, 240, 1);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(76, 175, 80, 1);
+            color: #fff;
+            border-radius: 8px 8px 0 0;
+            font-family: 'Montserrat';
+        }
+
+        .terminology-list {
+            list-style: none;   
+            padding: 0px;
+        }
+
+        .terminology-item {
+            background-color: rgba(248, 246, 247, 1);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .terminology-item:hover {
+            background-color: rgba(224, 224, 224, 1);
+            transform: translateY(-3px);
+        }
+
+        .conc {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .term-heading {
+            font-size: 22px;
+            color: rgba(76, 175, 80, 1);
+            margin-bottom: 10px;
+            font-family: 'young serif';
+        }
+
+        .term-definition {
+            margin-bottom: 15px; 
+            font-family: 'PT serif';
+        }
+        .img{
+            display: inline-block;
+            color: aqua;
+            height: 100%;
+            width: 100%;
+        }
+        .img img{
+            height: 100%;
+            width: 100%;
+            border-radius: 5%;
+            transition: 0.3s ease-in-out;
+            box-shadow: 1px 1px 4px black;
+        }
+        .img img:hover{
+            cursor: pointer;
+            transform: scale(102%);
+            box-shadow: 2px 2px 7px black;
+            filter:grayscale(100%)
+        }
+
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GMAIL ACCOUNT</h1>
+        </div>
+        <div class="terminology-list">
+            <div class="terminology-item">
+                <div class="term-heading">Creating a Gmail Account:</div>
+                <div class="term-definition">
+                    <ol type="1" start="1">
+                        <li>Visit gmail.com.</li>
+                        <li>Select Create Account to begin.</li>
+                        <li>Choose your account type (personal, business, etc.).</li>
+                        <li>Fill in your first and last name, gender, and birthdate.</li>
+                        <li>Create an appropriate Gmail address.</li>
+                        <li>Set and confirm your password.</li>
+                        <li>Provide recovery options such as a phone number and/or email address.</li>
+                    </ol>
+                </div>
+            </div>
+        </<div>    
+        </div>
+        <div class="img">
+            <img src="gmail.png">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>GITHUB ACCOUNT</h1>
+        </div>
+        <div class="terminology-list">
+            <div class="terminology-item">
+                <div class="term-heading">Creating a GitHub Account:</div>
+                <div class="term-definition">
+                    <ol type="1" start="1">
+                        <li>Go to github.com.</li>
+                        <li>Click on Sign up at the top right corner.</li>
+                        <li>Enter an existing email address.</li>
+                        <li>Determine a secure password as per necessary security requirements.</li>
+                        <li>Fill in the required details.</li>
+                        <li>Complete the human verification process even though you're probably a human.</li>
+                        <li>Finalize your account creation.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="github.png">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>CONNECTING VS CODE TO GITHUB</h1>
+        </div>
+        <div class="terminology-list">
+            <div class="terminology-item">
+                <div class="term-heading">Connecting VS Code to GitHub:</div>
+                <div class="term-definition">
+                    <ol type="1" start="1">
+                        <li>Install the GitLens extension in VS Code and Git on your Windows system first.</li>
+                        <li>Select the settings icon at the bottom left corner of VS Code and choose the Sync options.</li>
+                        <li>Select the GitHub account option.</li>
+                        <li>Log in to GitHub and authorize VS Code to sync with your account automatically.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="vscode.png">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>CLONING REPOSITORY FROM GITHUB</h1>
+        </div>
+        <div class="terminology-list">
+            <div class="terminology-item">
+                <div class="term-heading">Pulling a Repository from GitHub:</div>
+                <div class="term-definition">
+                    <ol type="1" start="1">
+                        <li>Open the concerned GitHub repository through your web browser.</li>
+                        <li>Click on the "<> Code" button, which opens a dropdown menu.</li>
+                        <li>In the "Clone" tab, you'll find multiple options. Choose the appropriate method, such as HTTPS or download ZIP.</li>
+                        <li>Follow the prompts to clone the repository to your local machine.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="github_repo.png">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>PUSHING REPOSITORY TO GITHUB</h1>
+        </div>
+        <div class="terminology-list">
+            <div class="terminology-item">
+                <div class="term-heading">Adding a File to a GitHub Repository:</div>
+                <div class="term-definition">
+                    <ol type="1" start="1">
+                        <li>Select the "Add file" option at the top right corner of the repository navigation options.</li>
+                        <li>Create a new file or upload a local file from your computer.</li>
+                        <li>Regardless of the method chosen, commit the file to the repository and sync it accordingly.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="github_push.png">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>PUBLISHING A REPOSITORY AS LIVE SITE</h1>
+        </div>
+        <div class="terminology-list">
+            <div class="terminology-item">
+                <div class="term-heading">Publishing the Site as Live:</div>
+                <div class="term-definition">
+                    <ol type="1" start="1">
+                        <li>Open the settings of your GitHub repository, after adding the index.html file to your repository.</li>
+                        <li>In the "Codes and automation" section, select the "Pages" tab.</li>
+                        <li>Under "Source", choose "Deploy from a branch".</li>
+                        <li>Select the branch you want to deploy (commonly the main branch) and set the folder, typically the root for convenience.</li>
+                        <li>Click "Save" to save your settings.</li>
+                        <li>It may take a few moments for the link to your live site to become available.</li>
+                        <li>After a few minutes, you should see something like "Your site is live at https://your-username.github.io/repository-name/" in the "Pages" tab of your repository settings.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="github_pages.png">
+        </div>
+    </div>
+    
+</body>
+</html>
